@@ -2,22 +2,44 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="node_modules/tachyons/css/tachyons.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <script src="bower_components/moment/min/moment.min.js"></script>
     <title>TitleOfSite</title>
   </head>
-  <body>
-    <div class="container">
-        <h1>TitleOfSite</h1>
-        <form id="name-of-form">
+  <body class="ma6 avenir">
+
+        <h1 class="f1 tc fw1">Tamagotchi</h1>
+        <form class="form-group" id="choose-character">
+          <div class="fl w-25 pa2">
+              <img src="img/chi-chi.gif">
+            </div>
+            <div class="fl w-25 pa2">
+                <img src="img/pika.gif">
+            </div>
+            <div class="fl w-25 pa2">
+                <img src="img/mini.gif">
+            </div>
+            <div class="fl w-25 pa2">
+                <img src="img/blizzy.gif">
+            </div>
+            <div class="tc">
+            <button class="f1 grow no-underline br-pill ph3 pv2 mb2 dib white bg-light-purple" type="click">Start</button>
+          </div>
+          </form>
+        </div>
+
+
+
+        <!-- <form id="choose-character">
           <div class="form-group">
-            <label for="field-id">Enter a number:</label>
+            <label for="field-id">Kuchipatchi</label>
             <input id="field-id" type="number">
             <button class="btn-success" type="submit">Submit</button>
           </div>
-        </form>
+        </form> -->
         <ul id="solution"></ul>
-      </div>
+
   </body>
 </html>
